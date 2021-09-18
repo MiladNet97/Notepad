@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="MiladShahsavari1@gmail.com">
+  <title>NotePad</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="message-box"></div>
+
+  <div class="container">
+    <div class="row pt-5">
+
+      <div class="col-12 d-flex justify-content-center">
+        <i class="fas fa-book-open fa-3x text-primary px-2"></i>
+        <h1>My Notepad</h1>
+      </div>
+
+      <div class="col-12 note__container">
+        <form id="note__form">
+          <div class="form-group">
+            <label class="form-label" for="form-title">Title Note:</label>
+            <input type="text" id="form-title" name="title" class="form-control"
+              placeholder="Write the title of the note">
+          </div>
+
+          <div class="form-group pt-4">
+            <label class="form-label" for="form-text">Text Note :</label>
+            <textarea class="form-control" name="text" id="form-text" rows="5"
+              placeholder="Write the text of the note"></textarea>
+          </div>
+
+          <div class="swatches d-flex justify-content-end mt-2 mb-3">
+            <span class="bg-primary swatch active" data-color="primary"></span>
+            <span class="bg-secondary swatch " data-color="secondary"></span>
+            <span class="bg-success swatch " data-color="green"></span>
+            <span class="bg-danger swatch" data-color="red"></span>
+            <span class="bg-warning swatch" data-color="yellow"></span>
+            <span class="bg-info swatch" data-color="blue"></span>
+            <span class="bg-light swatch" data-color="light"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Add Note</button>
+        </form>
+        <form id="search">
+          <input type="search" name="search" id="form-search" class="form-control mt-3"
+            placeholder="Search In Notes ..." name="" id="">
+        </form>
+      </div>
+
+    </div>
+
+    <div id="note-list" class="d-flex flex-wrap justify-content-between mt-5"></div>
+
+  </div>
+
+  <script src="assets/js/jquery-3.5.1.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

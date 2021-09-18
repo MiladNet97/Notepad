@@ -1,0 +1,109 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/Roboto-Regular.ttf') format('truetype'),
+    url('fonts/Roboto-Medium.ttf') format('truetype'),
+    url('fonts/Roboto-MediumItalic.ttf') format('truetype'),
+    url('fonts/Roboto-Italic.ttf') format('truetype'),
+    url('fonts/Roboto-Bold.ttf') format('truetype'),
+    url('fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  background: #222;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+input,
+textarea,
+button {
+  font-family: Roboto;
+}
+
+* {
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+  list-style: none;
+  box-sizing: inherit;
+}
+
+.text-primary {
+  color: #375a7f !important;
+}
+
+.alert-danger {
+  background-color: #e74c3c;
+}
+
+.alert-success {
+  background-color: #00bc8c;
+}
+
+.alert {
+  border: none;
+  color: #fff;
+}
+
+.note__remove,
+.note__edit {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swatch:hover,
+.active {
+  border: 3px solid rgb(183 141 141);
+  box-shadow: 0px 0px 5px rgb(255 255 255);
+}
+
+.note-remove:hover,
+.note-edit:hover {
+  color: #EF5350 !important;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#form-text {
+  min-height: 50px;
+  max-height: 500px;
+}
+
+.message-box {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 55;
+  width: 300px;
+}
+
+.alert {
+  transition: transform 0.3s ease-in-out;
+}
+
+.alert.remove {
+  transform: translateX(200%);
+}
